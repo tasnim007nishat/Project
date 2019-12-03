@@ -1,0 +1,33 @@
+package Test;
+
+import User.User;
+import java.util.Scanner;
+
+public class UserTest {
+	public static void main(String[] args) {
+		String id;
+		String pass;
+		String loginStatus;
+		
+		User u1=new User();
+		
+		Scanner Sc = new Scanner(System.in);
+		System.out.print("User Name: ");
+		id=Sc.nextLine();
+		System.out.print("Password: ");
+		pass=Sc.nextLine();
+		System.out.print("Status: ");
+		loginStatus=Sc.nextLine();
+		
+		u1.setID(id);
+		u1.setPassword(pass);
+		u1.setLoginStatus(loginStatus);
+		
+		u1.getID();
+		u1.getPassword();
+		u1.getLoginStatus();
+		
+		u1.registration();
+		u1.login(id,"Moni");
+	 } 
+}
