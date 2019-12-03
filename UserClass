@@ -1,0 +1,71 @@
+package User;
+
+public class User {
+	private String firstName, lastName;
+	private String user_id;
+	private String password;
+	private String loginStatus;
+	
+	
+	public void setFirstname(String firstName) {
+		this.firstName=firstName;
+	}
+	
+	public String getFirstname() {
+		return firstName;
+	}
+	
+	public void setLastname(String lastName) {
+		this.lastName=lastName;
+	}
+	
+	public String getLastname() {
+		return lastName;
+	}
+	
+	public void setID(String user_id) {
+		this.user_id=user_id;
+	}
+	
+	public String getID() {
+		return user_id;
+	}
+	
+	public void setPassword(String password) {
+		this.password=password;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
+	
+	public void setLoginStatus(String loginStatus) {
+		this.loginStatus=loginStatus;
+	}
+	
+	public String getLoginStatus() {
+		return loginStatus;
+	}
+	
+	public void login(String id, String pass) {
+		if(user_id==id && password==pass) {
+			System.out.print("Welcome!");
+		}
+		
+		else {
+			System.out.print("Error! Your User Name or Password is wrong.");
+		}
+		
+	}
+	
+	public void logout() {
+		
+	}
+	
+	public void registration() {
+		System.out.print("First Name: "+firstName);
+		System.out.print("Last Name: "+lastName);
+	}
+
+	
+}
