@@ -1,0 +1,35 @@
+package Code;
+
+public class Patient extends User {
+	private String pname, bloodgroup, address;
+	
+	public void setPatientN(String pname) {
+		this.pname=pname;
+		pname=getFirstname()+" "+getLastname();
+	}
+	
+	public String getPatientName() {
+		return pname;
+	}
+	
+	public void setBloodgroup(String bloodgroup) {
+		this.bloodgroup=bloodgroup;
+	}
+	
+	public String getBloodgroup() {
+		return bloodgroup;
+	}
+	
+	public void setAddress(String address) {
+		this.address=address;
+	}
+	
+	public String getAddress() {
+		return address;
+	}
+	
+	public void doctorInstruction() {
+		
+	}
+
+}
