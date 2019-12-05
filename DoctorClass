@@ -1,0 +1,27 @@
+package Code;
+
+public class Doctor extends User{
+	private String dname;
+	
+	public void setDoctorN(String dname) {
+		this.dname=dname;
+		dname=getFirstname()+" "+getLastname();
+	}
+	
+	public String getDoctorN() {
+		return dname;
+	}
+	
+	public void checkPatientHistory() {
+		
+	}
+	
+	public void update() {
+		
+	}
+	
+	public void examination() {
+		
+	}
+
+}
