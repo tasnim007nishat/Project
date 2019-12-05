@@ -1,11 +1,7 @@
-package User;
+package Code;
 
 public class User {
-	private String firstName, lastName;
-	private String user_id;
-	private String password;
-	private String loginStatus;
-	
+	private String firstName,lastName,gender,phone, user_id, password,loginStatus;
 	
 	public void setFirstname(String firstName) {
 		this.firstName=firstName;
@@ -21,6 +17,22 @@ public class User {
 	
 	public String getLastname() {
 		return lastName;
+	}
+	
+	public void setGender(String gender) {
+		this.gender=gender;
+	}
+	
+	public String getGender() {
+		return gender;
+	}
+	
+	public void setPhone(String phone) {
+		this.phone=phone;
+	}
+	
+	public String getPhone() {
+		return phone;
 	}
 	
 	public void setID(String user_id) {
@@ -66,6 +78,5 @@ public class User {
 		System.out.print("First Name: "+firstName);
 		System.out.print("Last Name: "+lastName);
 	}
-
 	
 }
